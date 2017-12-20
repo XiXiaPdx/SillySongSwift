@@ -32,11 +32,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func displayLyrics(_ sender: Any) {
-            if (nameField.text=="") {
+            if nameField.text=="" {
                 lyricsView.text="Please give me a name so I can make sweet lyrics!"
             } else {
-                let enteredName = nameField.text
-                lyricsView.text=enteredName
+                let enteredName = nameField.text!
+                lyricsView.text=makeLyrics(with: bananaFanaTemplate, from:enteredName)
             }
         }
 }
