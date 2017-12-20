@@ -46,6 +46,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="displayLyrics:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="pCY-gM-Vne"/>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="fqO-M0-HRe"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.97458599206454433" green="1" blue="0.94735227797950161" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -61,6 +65,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="lyricsView" destination="rmz-gU-kcP" id="Mfb-Yk-phT"/>
+                        <outlet property="nameField" destination="WMA-i1-2P6" id="Tyg-7l-wE0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
