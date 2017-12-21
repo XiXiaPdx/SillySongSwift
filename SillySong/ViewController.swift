@@ -43,14 +43,14 @@ class ViewController: UIViewController {
 
 func shortenName (_ name: String) -> String {
     // if constant, remove it and check again.
-    let vowels: Array<Character> = ["a", "e", "i", "o", "u"]
+//    let vowels: Array<Character> = ["a","A", "e", "i", "o", "u"]
+    let vowels: String = "AaEeIiOoUu"
     var shorterName = name
     for nameLetter in name{
         if vowels.contains(nameLetter){
-            return shorterName.lowercased()
+            return shorterName
         } else {
             shorterName.remove(at: shorterName.startIndex)
-            print (shorterName)
         }
     }
     return "Not a real name"

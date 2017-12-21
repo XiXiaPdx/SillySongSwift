@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA5076401FEB6DA6007430AD /* SillySongTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA50763F1FEB6DA6007430AD /* SillySongTests.swift */; };
 		FAEFFAF61FE9C86600251A57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFFAF51FE9C86600251A57 /* AppDelegate.swift */; };
 		FAEFFAF81FE9C86600251A57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFFAF71FE9C86600251A57 /* ViewController.swift */; };
 		FAEFFAFB1FE9C86600251A57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAEFFAF91FE9C86600251A57 /* Main.storyboard */; };
@@ -14,7 +15,20 @@
 		FAEFFB001FE9C86600251A57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAEFFAFE1FE9C86600251A57 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		FA5076421FEB6DA6007430AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAEFFAEA1FE9C86500251A57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAEFFAF11FE9C86600251A57;
+			remoteInfo = SillySong;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		FA50763D1FEB6DA6007430AD /* SillySongTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SillySongTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA50763F1FEB6DA6007430AD /* SillySongTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SillySongTests.swift; sourceTree = "<group>"; };
+		FA5076411FEB6DA6007430AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAEFFAF21FE9C86600251A57 /* SillySong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SillySong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAEFFAF51FE9C86600251A57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAEFFAF71FE9C86600251A57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,6 +39,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FA50763A1FEB6DA6007430AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FAEFFAEF1FE9C86600251A57 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -35,10 +56,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA50763E1FEB6DA6007430AD /* SillySongTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA50763F1FEB6DA6007430AD /* SillySongTests.swift */,
+				FA5076411FEB6DA6007430AD /* Info.plist */,
+			);
+			path = SillySongTests;
+			sourceTree = "<group>";
+		};
 		FAEFFAE91FE9C86500251A57 = {
 			isa = PBXGroup;
 			children = (
 				FAEFFAF41FE9C86600251A57 /* SillySong */,
+				FA50763E1FEB6DA6007430AD /* SillySongTests */,
 				FAEFFAF31FE9C86600251A57 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				FAEFFAF21FE9C86600251A57 /* SillySong.app */,
+				FA50763D1FEB6DA6007430AD /* SillySongTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +99,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FA50763C1FEB6DA6007430AD /* SillySongTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA5076441FEB6DA6007430AD /* Build configuration list for PBXNativeTarget "SillySongTests" */;
+			buildPhases = (
+				FA5076391FEB6DA6007430AD /* Sources */,
+				FA50763A1FEB6DA6007430AD /* Frameworks */,
+				FA50763B1FEB6DA6007430AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA5076431FEB6DA6007430AD /* PBXTargetDependency */,
+			);
+			name = SillySongTests;
+			productName = SillySongTests;
+			productReference = FA50763D1FEB6DA6007430AD /* SillySongTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		FAEFFAF11FE9C86600251A57 /* SillySong */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAEFFB041FE9C86600251A57 /* Build configuration list for PBXNativeTarget "SillySong" */;
@@ -94,6 +144,11 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = Udacity;
 				TargetAttributes = {
+					FA50763C1FEB6DA6007430AD = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FAEFFAF11FE9C86600251A57;
+					};
 					FAEFFAF11FE9C86600251A57 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -114,11 +169,19 @@
 			projectRoot = "";
 			targets = (
 				FAEFFAF11FE9C86600251A57 /* SillySong */,
+				FA50763C1FEB6DA6007430AD /* SillySongTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		FA50763B1FEB6DA6007430AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FAEFFAF01FE9C86600251A57 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -132,6 +195,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FA5076391FEB6DA6007430AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA5076401FEB6DA6007430AD /* SillySongTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FAEFFAEE1FE9C86600251A57 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -142,6 +213,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA5076431FEB6DA6007430AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAEFFAF11FE9C86600251A57 /* SillySong */;
+			targetProxy = FA5076421FEB6DA6007430AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FAEFFAF91FE9C86600251A57 /* Main.storyboard */ = {
@@ -163,6 +242,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		FA5076451FEB6DA6007430AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VS55F6A5P3;
+				INFOPLIST_FILE = SillySongTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = udacity.SillySongTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SillySong.app/SillySong";
+			};
+			name = Debug;
+		};
+		FA5076461FEB6DA6007430AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VS55F6A5P3;
+				INFOPLIST_FILE = SillySongTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = udacity.SillySongTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SillySong.app/SillySong";
+			};
+			name = Release;
+		};
 		FAEFFB021FE9C86600251A57 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -275,6 +390,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VS55F6A5P3;
 				INFOPLIST_FILE = SillySong/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = udacity.SillySong;
@@ -289,6 +405,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VS55F6A5P3;
 				INFOPLIST_FILE = SillySong/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = udacity.SillySong;
@@ -301,6 +418,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FA5076441FEB6DA6007430AD /* Build configuration list for PBXNativeTarget "SillySongTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA5076451FEB6DA6007430AD /* Debug */,
+				FA5076461FEB6DA6007430AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FAEFFAED1FE9C86500251A57 /* Build configuration list for PBXProject "SillySong" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
